@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Tab URL Exporter",
+  "description": "This Chrome extension allows you to easily gather URLs from your open tabs and windows, and copy or download them in various formats such as Markdown, HTML, Plain Text, JSON, XML, and CSV. Whether you're organizing information or preparing reports, this tool helps you quickly put the collected URLs to use, making your workflow more efficient and seamless!",
+  "version": "1.0",
+  "icons": {
+    "16": "icons/icon.png",
+    "48": "icons/icon.png",
+    "128": "icons/icon.png"
+  },
+  "permissions": ["tabs", "downloads"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

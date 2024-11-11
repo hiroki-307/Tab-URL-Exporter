@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Export Tab URLs</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="format-selector">
+        <label for="format-select">Select Format</label>
+        <div class="select-wrapper">
+          <img src="./icons/file.svg" class="format-icon" alt="format" >
+          <select id="format-select">
+            <option value="markdown">Markdown</option>
+            <option value="html">HTML</option>
+            <option value="plain">Plain Text</option>
+            <option value="json">JSON</option>
+            <option value="xml">XML</option>
+            <option value="csv">CSV</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="button-group">
+        <button id="export-all--btn">
+          <img src="./icons/file_export_all.svg" alt="file_export" />
+          Export All Windows
+        </button>
+        <button id="export-window--btn">
+          <img src="./icons/file_export_window.svg" alt="file_export" />
+          Export Current Window
+        </button>
+        <button id="copy-all-btn">
+          <img src="./icons/copy_all.svg" alt="copy" />
+          Copy All Windows
+        </button>
+        <button id="copy-window-btn">
+          <img src="./icons/copy_window.svg" alt="copy" />
+          Copy Current Window
+        </button>
+      </div>
+
+      <p id="status"></p>
+    </div>
+    <script src="getUrl.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>
